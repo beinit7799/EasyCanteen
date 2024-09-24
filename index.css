@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: white;
+    --light-green: #2BCC3E;
+    --gray: #0F1111;
+}
+.front-banner{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://ik.imagekit.io/dzz/easycanteen/tr:w-400/victoria-shes-UC0HZdUitWY-unsplash_aWOjS62_x.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1658753753098);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    color: var(--text-color);
+    font-size: 12px;
+    border-bottom: 2px solid var(--light-green);
+}
+.front-banner p{
+    text-align: center;
+    font-size: 14px;
+}
+.logo{
+    width: 40%;
+}
+.container{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+    color: var(--text-color);
+    padding: 20% 10%;
+}
+.theme-text{
+    color: var(--light-green);
+}
+.main-text{
+    font-weight: 600;
+    font-size: 20px;
+}
+.sub-text{
+    font-size: 12px;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+.label-text{
+    margin: 3px;
+}
+input[type="text"],input[type="password"]{
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--light-green);
+    padding: 5px;
+    margin-bottom: 5%;
+}
+.remember-me{
+    font-size: 12px;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+}
+#submitBtn{
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: var(--light-green);
+    margin-top: 5%;
+}
+.sign-up-prompt,.sign-in-prompt{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.sign-up,.sign-in{
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+.sign-up-btn{
+    margin-top: 150px;
+}
+.form-footer{
+    background-color: var(--light-green);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.err{
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+    .wrapper{
+        display: flex;
+    }
+    .front-banner{
+        height: 100vh;
+        width: 50%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://ik.imagekit.io/dzz/easycanteen/tr:w-800/victoria-shes-UC0HZdUitWY-unsplash_aWOjS62_x.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1658753753098);
+        background-size: cover;
+        background-position: center;
+        border: none;
+    }
+    .front-banner p{
+        font-size: 20px;
+    }
+    .container{
+        width: 50%;
+        height: 100vh;
+        padding:  10%;
+    }
+    .header img{
+        /* height: 30%; */
+        width: 30%;
+    }
+    .main-text{
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .sub-text{
+        font-size: 14px;
+    }
+    form{
+        font-size: 16px;
+    }
+    .remember-me{
+        margin-top: 8%;
+        font-size: 14px;
+    }
+    .sign-up-prompt, .sign-in-prompt, .sign-in, .sign-up{
+        font-size: 14px;
+    }
+}

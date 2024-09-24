@@ -1,0 +1,110 @@
+:root{
+    --lighter-theme-color: #2bcc3e52;
+}
+.container{
+    min-height: 100vh;
+}
+.header{
+    height: 10vh;
+}
+.header img{
+    /* height: 5vh; */
+    width: 70px;
+}
+.title-text{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.total-items-on-cart{
+    color: white;
+}
+.cart-items{
+    height: 100px;
+    margin-top: 20px;
+    margin: 15px 0;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+}
+.checkout-btn{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.item-attributes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.item-img{
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+    object-fit: cover;
+    object-position: center;
+}
+.item-name{
+    color: var(--text-color);
+}
+.item-price{
+    color: var(--light-green);
+}
+.item-qty{
+    color: black;
+    background-color: var(--light-green);
+    border-radius: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.icon{
+    color: var(--light-green);
+    position: inherit;
+    right: 5%;
+    top: 70%;
+}
+.empty-cart-text{
+    color: var(--text-color);
+    margin-bottom: 5%;
+}
+.cart-details{
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    padding: 5% 3%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.hr-line{
+    border-top: 2px solid var(--light-green);
+    width: 100%;
+    margin: 8px 0;
+}
+
+@media only screen and (min-width:600px){
+    .header{
+        height: 12vh;
+    }
+    .cartDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
+    .cart-details{
+        padding: 3% 3%;
+        margin-bottom: 5%;
+    }
+}
